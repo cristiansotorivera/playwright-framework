@@ -1,5 +1,7 @@
 # Playwright Automation Framework (JavaScript)
 
+![Playwright Tests](https://github.com/cristiansotorivera/playwright-framework/actions/workflows/playwright.yml/badge.svg)
+
 A scalable end-to-end test automation framework built with **Playwright** and **JavaScript**.
 
 ---
