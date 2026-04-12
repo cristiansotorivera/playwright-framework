@@ -2,6 +2,8 @@
 
 A scalable end-to-end test automation framework built with **Playwright** and **JavaScript**.
 
+---
+
 ## 🚀 Features
 
 - Playwright Test runner
@@ -15,6 +17,8 @@ A scalable end-to-end test automation framework built with **Playwright** and **
 ---
 
 ## 📁 Project Structure
+
+
 playwright-framework/
 ├─ src/
 │ ├─ pages/
@@ -28,6 +32,7 @@ playwright-framework/
 ├─ .env.example
 └─ .github/workflows/
 
+
 ---
 
 ## ⚙️ Setup
@@ -35,7 +40,9 @@ playwright-framework/
 ```bash
 npm install
 npx playwright install
+
 Create your environment file:
+
 cp .env.example .env
 ▶️ Run Tests
 
