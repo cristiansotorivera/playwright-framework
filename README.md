@@ -6,32 +6,32 @@ A scalable end-to-end test automation framework built with **Playwright** and **
 
 ## 🚀 Features
 
-- Playwright Test runner
-- Page Object Model (POM)
-- Fixtures for reusable setup
-- Environment variables with `.env`
-- Auth session reuse (fast tests ⚡)
-- Test tagging (`@smoke`, `@auth`)
-- GitHub Actions CI integration
+* Playwright Test runner
+* Page Object Model (POM)
+* Fixtures for reusable setup
+* Environment variables with `.env`
+* Auth session reuse (fast tests ⚡)
+* Test tagging (`@smoke`, `@auth`)
+* GitHub Actions CI integration
 
 ---
 
 ## 📁 Project Structure
 
-
+```
 playwright-framework/
 ├─ src/
-│ ├─ pages/
-│ ├─ data/
-│ └─ fixtures/
+│  ├─ pages/
+│  ├─ data/
+│  └─ fixtures/
 ├─ tests/
-│ ├─ auth/
-│ ├─ smoke/
-│ └─ setup/
+│  ├─ auth/
+│  ├─ smoke/
+│  └─ setup/
 ├─ playwright.config.js
 ├─ .env.example
 └─ .github/workflows/
-
+```
 
 ---
 
@@ -40,50 +40,83 @@ playwright-framework/
 ```bash
 npm install
 npx playwright install
+```
 
 Create your environment file:
 
+```bash
 cp .env.example .env
-▶️ Run Tests
+```
+
+---
+
+## ▶️ Run Tests
 
 Run all tests:
 
+```bash
 npm test
+```
 
 Run smoke tests:
 
+```bash
 npx playwright test --grep "@smoke"
+```
 
 Run auth tests:
 
+```bash
 npx playwright test --grep "@auth"
+```
 
 Run with UI:
 
+```bash
 npm run test:ui
-🔐 Environment Variables
+```
 
-Defined in .env:
+---
 
+## 🔐 Environment Variables
+
+Defined in `.env`:
+
+```env
 BASE_URL=
 VALID_USERNAME=
 VALID_PASSWORD=
 INVALID_USERNAME=
 INVALID_PASSWORD=
-⚡ CI/CD
+```
+
+---
+
+## ⚡ CI/CD
 
 GitHub Actions automatically runs tests on:
 
-push to main
-pull requests
-📌 Notes
-.env is ignored (contains secrets)
-.env.example provides required variables
-Auth state is stored in playwright/.auth/
-🧪 Example Tests
-Login (valid & invalid)
-Inventory page access
-Add item to cart
-👨‍💻 Author
+* push to `main`
+* pull requests
+
+---
+
+## 📌 Notes
+
+* `.env` is ignored (contains secrets)
+* `.env.example` provides required variables
+* Auth state is stored in `playwright/.auth/`
+
+---
+
+## 🧪 Example Tests
+
+* Login (valid & invalid)
+* Inventory page access
+* Add item to cart
+
+---
+
+## 👨‍💻 Author
 
 Cristian Soto
