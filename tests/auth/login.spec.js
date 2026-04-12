@@ -13,4 +13,5 @@ test('valid login example', async ({ loginPage, page }) => {
   await loginPage.login(users.validUser.username, users.validUser.password);
 
   await expect(page).toHaveURL(/inventory/);
+  
 });
