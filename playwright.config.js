@@ -4,6 +4,7 @@ require('dotenv').config();
 module.exports = defineConfig({
   testDir: './tests',
   outputDir: 'pw-results',
+  reporter: [['html', { open: 'never' }], ['list']],
   use: {
     headless: true,
     baseURL: process.env.BASE_URL,
