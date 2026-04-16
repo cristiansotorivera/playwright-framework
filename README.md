@@ -111,11 +111,14 @@ GitHub Actions automatically runs tests on:
 
 ---
 
-## 🧪 Example Tests
+## 🧪 Covered Test Flows
 
-* Login (valid & invalid)
-* Inventory page access
-* Add item to cart
+- Valid login
+- Invalid login validation
+- Logged-in inventory access
+- Add item to cart
+- Checkout validation when required fields are missing
+- Complete checkout flow through order confirmation
 
 ---
 
