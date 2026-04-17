@@ -113,6 +113,7 @@ GitHub Actions automatically runs tests on:
 
 ## 🧪 Covered Test Flows
 
+### UI Flows
 - Valid login
 - Invalid login validation
 - Logged-in inventory access
@@ -120,6 +121,10 @@ GitHub Actions automatically runs tests on:
 - Checkout validation when required fields are missing
 - Complete checkout flow through order confirmation
 
+### API Flows
+- GET posts list
+- POST create a post
+- GET non-existent post returns 404
 ---
 
 ## 👨‍💻 Author
