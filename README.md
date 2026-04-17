@@ -21,19 +21,52 @@ A scalable end-to-end test automation framework built with **Playwright** and **
 ## 📁 Project Structure
 
 ```
+## 📁 Project Structure
+
+```text
 playwright-framework/
+├─ .github/
+│  └─ workflows/
+│     └─ playwright.yml
+├─ playwright/
+│  └─ .auth/
 ├─ src/
-│  ├─ pages/
+│  ├─ api/
+│  │  ├─ apiAssertions.js
+│  │  └─ postsApi.js
 │  ├─ data/
-│  └─ fixtures/
+│  │  ├─ apiData.js
+│  │  ├─ checkoutData.js
+│  │  └─ users.js
+│  ├─ fixtures/
+│  │  └─ test-fixtures.js
+│  └─ pages/
+│     ├─ CartPage.js
+│     ├─ CheckoutPage.js
+│     ├─ LoginPage.js
+│     └─ ProductsPage.js
 ├─ tests/
+│  ├─ api/
+│  │  ├─ create-post.spec.js
+│  │  ├─ get-post-by-id.spec.js
+│  │  ├─ not-found.spec.js
+│  │  └─ posts.spec.js
 │  ├─ auth/
-│  ├─ smoke/
-│  └─ setup/
-├─ playwright.config.js
+│  │  └─ login.spec.js
+│  ├─ setup/
+│  │  └─ auth.setup.spec.js
+│  └─ smoke/
+│     ├─ cart.spec.js
+│     ├─ checkout-negative.spec.js
+│     ├─ checkout.spec.js
+│     ├─ example.spec.js
+│     └─ inventory.spec.js
 ├─ .env.example
-└─ .github/workflows/
-```
+├─ .gitignore
+├─ package.json
+├─ package-lock.json
+├─ playwright.config.js
+└─ README.md
 
 ---
 
