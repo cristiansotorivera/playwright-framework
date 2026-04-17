@@ -23,10 +23,17 @@ module.exports = defineConfig({
     },
     {
       name: 'logged-in-tests',
-      testIgnore: [/tests\/auth\/.*\.spec\.js/, /.*\.setup\.spec\.js/],
+      testIgnore: [/tests\/auth\/.*\.spec\.js/, /tests\/api\/.*\.spec\.js/, /.*\.setup\.spec\.js/],
       dependencies: ['setup'],
       use: {
         storageState: 'playwright/.auth/user.json',
+      },
+    },
+    {
+      name: 'api-tests',
+      testMatch: /tests\/api\/.*\.spec\.js/,
+      use: {
+        baseURL: 'https://jsonplaceholder.typicode.com',
       },
     },
   ],
