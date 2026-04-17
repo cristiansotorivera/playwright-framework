@@ -154,6 +154,20 @@ GitHub Actions automatically runs tests on:
 - Checkout validation when required fields are missing
 - Complete checkout flow through order confirmation
 
+## 🔌 API Test Design
+
+The API layer is organized to keep tests clean and maintainable:
+
+- `src/api/postsApi.js` contains endpoint methods
+- `src/api/apiAssertions.js` contains shared API assertions
+- `src/data/apiData.js` contains reusable request payloads
+- `tests/api/` contains API test cases
+
+This keeps:
+- request logic out of test files
+- assertions reusable
+- payloads easy to update
+
 ### API Flows
 - GET posts list
 - POST create a post
