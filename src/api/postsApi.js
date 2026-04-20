@@ -16,6 +16,12 @@ class PostsApi {
   async getPostById(id) {
     return await this.request.get(`/posts/${id}`);
   }
+
+  async updatePost(id, payload) {
+    return await this.request.put(`/posts/${id}`, {
+      data: payload,
+    });
+  }
 }
 
 module.exports = { PostsApi };

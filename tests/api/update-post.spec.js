@@ -12,10 +12,7 @@ test('@api update a post', async ({ request }) => {
     userId: 1,
   };
 
-  const response = await request.put('/posts/1', {
-    data: updatedPayload,
-  });
-
+  const response = await postsApi.updatePost(1, updatedPayload);
   expectStatus(response, 200);
 
   const body = await response.json();
