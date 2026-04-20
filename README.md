@@ -170,7 +170,10 @@ This keeps:
 
 ### API Flows
 - GET posts list
+- GET post by ID
 - POST create a post
+- PUT update a post
+- DELETE a post
 - GET non-existent post returns 404
 ---
 
