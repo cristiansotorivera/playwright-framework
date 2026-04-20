@@ -12,6 +12,9 @@ class PostsApi {
       data: payload,
     });
   }
+  async deletePost(id) {
+  return await this.request.delete(`/posts/${id}`);
+}
 
   async getPostById(id) {
     return await this.request.get(`/posts/${id}`);
